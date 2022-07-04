@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "open sans";
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+nav .logo{
+    padding: 22px 120px;
+    height: 80px;
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+nav ul{
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a{
+    line-height: 80px;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: "regular";
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 6px;
+}
+
+#one{
+    width: 100%;
+    height: 100vh;
+    background: url(assets/main-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    color: #fff;
+    width: 1200px;
+    height: 200px;
+    font-size: 80px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: "arial";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+h3{
+    color: #fff;
+    width: 1200px;
+    height: 200px;
+    font-size: 24px;
+    font-weight: regular;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: "arial";
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+button{
+    width: 200px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+button a{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "arial";
+}
+
+h6 a{
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: regular;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: "arial";
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+img{
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}

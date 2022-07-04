@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <title>Games</title>
+    <link rel="icon" type="icon.ico" href="assets/icon.ico"/>
+</head>
+
+<style>
+    body{
+    width: 100%;
+    height: 100vh;
+    background: url(assets/top-score-bg.png);
+    background-size: cover;
+    background-position: center;    
+    }
+
+    .wrapper {
+    display: grid;
+    grid-gap: 30px;
+    width: 550px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .box {
+    background-color:rgba(136, 134, 134, 0.051);
+    color: rgb(223, 144, 48);
+    border-radius: 7px;
+    padding: 20px;
+    font-size: 150%;
+
+  }
+
+    
+  .c {
+    grid-column: 1 ;
+    grid-row: 1 ; 
+  }
+  .f {
+    grid-column: 1 ;
+    grid-row: 2 ;
+    
+  }
+  .e {
+    grid-column: 1 ;
+    grid-row: 3;
+  }
+
+  p{
+    color: white;
+    font-size: 18px; 
+    font-family: "open sans";
+  }
+  .evan{
+    color: grey;
+    font-size: 18px; 
+    font-family: "open sans";
+    position: fixed;
+    top: 30.5%;
+    left: 22%;
+    transform: translateX(-50%) translateY(-50%)
+  }
+  .lahti{
+    color: grey;
+    font-size: 18px; 
+    font-family: "open sans";
+    position: fixed;
+    top: 75%;
+    left: 13%;
+    transform: translateX(-50%) translateY(-50%)
+  }
+  .jada{
+    color: grey;
+    font-size: 18px; 
+    font-family: "open sans";
+    position: fixed;
+    bottom: -47%;
+    left: 23%;
+    transform: translateX(-50%) translateY(-50%)
+  }
+  .griffin{
+    color: grey;
+    font-size: 18px; 
+    font-family: "open sans";
+    position: fixed;
+    bottom: -104%;
+    left: 12%;
+    transform: translateX(-50%) translateY(-50%)
+  }
+
+  .aaron{
+    color: grey;
+    font-size: 18px; 
+    font-family: "open sans";
+    position: fixed;
+    bottom: -160%;
+    left: 20%;
+    transform: translateX(-50%) translateY(-50%)
+  }
+  .williams{
+    color: grey;
+    font-size: 18px; 
+    font-family: "open sans";
+    position: fixed;
+    bottom: -215%;
+    left: 17%;
+    transform: translateX(-50%) translateY(-50%)
+  }
+  
+  h2{
+    color: #fff;
+    width: 300px;
+    height: 100px;
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-family: "arial";
+    position: absolute;
+    top: 47%;
+    left: 16%;
+    transform: translateX(-50%) translateY(-50%);
+    }
+
+    h4{
+    color: #fff;
+    width: 300px;
+    height: 100px;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-family: "arial";
+    position: absolute;
+    top: 53%;
+    left: 16%;
+    transform: translateX(-50%) translateY(-50%);
+    }
+
+   
+    h6 a{
+        color: #fff;
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+        font-weight: lighter;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-family: "arial";
+        position: absolute;
+        bottom: 7%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    .next{
+        width: 30px;
+        height: 30px;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+  
+    button{
+        width: 150px;
+        height: 33px;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 57%;
+        left: 11%;
+        transform: translateX(-50%) translateY(-50%);
+        color: black;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        font-family: "arial";
+}
+    
+.ava{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.twit_evan{
+    width: 30px;
+    height: 30px;    
+    position: fixed;
+    top: 20.5%;
+    left: 90%;
+    transform: translateX(-50%) translateY(-50%)
+}
+.twit_jada{
+    width: 30px;
+    height: 30px;    
+    position: fixed;
+    bottom: -40%;
+    left: 90%;
+    transform: translateX(-50%) translateY(-50%)
+}
+.twit_aaron{
+    width: 30px;
+    height: 30px;    
+    position: fixed;
+    bottom: -150%;
+    left: 90%;
+    transform: translateX(-50%) translateY(-50%)
+}
+
+</style>
+
+<body>
+    
+    <h2>TOP SCORES</h2>
+    <h4>This top score from various games provided on this platform</h4>
+    <button type="button" class="btn btn-warning">see more</button>
+    <div class="wrapper">
+        <div class="box c"><img class="ava" src="assets/evan-lahti.jpg"> &nbsp;Evan Lahti
+            <img class="twit_evan" src="assets/twitter.svg">
+            <h3 class="evan">PC Gamer</h3></br></br>
+            <p>"One of my gaming highlights of the year." </p>
+            <h5 class="lahti">June 18, 2021</h5>
+        </div>
+        
+        <div class="box f"><img class="ava" src="assets/jada-griffin.jpg"> &nbsp;Jada Griffin
+            <img class="twit_jada" src="assets/twitter.svg">
+            <h3 class="jada">Nerdreactor</h3></br></br>
+            <p>"The next thing in the world of streaming</br>
+                and survival games."</p>
+            <h5 class="griffin">July 10, 2021</h5>
+        </div>
+        
+        <div class="box e"><img class="ava" src="assets/aaron-williams.jpg"> &nbsp;Aaron Williams
+            <img class="twit_aaron" src="assets/twitter.svg">
+            <h3 class="aaron">Uproxx</h3></br></br>
+            <p>"Snoop Dog Playing The Wildly Entertaining</br>
+                'SOS' is Ridiculous."</p>
+            <h5 class="williams">December 24, 2018</h5>
+        </div>
+      </div>
+
+      <h6><a href="six.html">NEXT</a></h6>
+    <img src="assets/scroll-down.svg" class="next">
+
+    
+</body>
+</html>

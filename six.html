@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <title>Games</title>
+    <link rel="icon" type="icon.ico" href="assets/icon.ico"/>
+</head>
+
+<style>
+    body{
+    width: 100%;
+    height: 100vh;
+    background: url(assets/newsletter.png);
+    background-size: cover;
+    background-position: center;    
+    }
+    #skull{
+        background: url(assets/skull.png) left no-repeat;
+        width: 50%;
+        height: 80vh;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .wrapper {
+    display: grid;
+    grid-gap: 5px;
+    width: 550px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 35%;
+    left: 80%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .box {
+    background-color:rgba(0, 0, 0, 0.1);
+    color: rgb(255, 255, 255);
+    border-radius: 7px;
+    padding: 5px;
+    font-size: 150%;
+
+  }
+   
+  .a {
+    grid-column: 1 ;
+    grid-row: 1 ; 
+    font-size: 18px;
+  }
+  .b {
+    grid-column: 1 ;
+    grid-row: 2 ;
+    font-size: 50px;
+  }
+  .c {
+    grid-column: 1 ;
+    grid-row: 3;
+    font-size: 17px;
+    font-weight: lighter;
+  }
+
+  .email{
+        width: 270px;
+        height: 38px;
+        margin: 0;
+        padding: 0;
+        position:fixed;
+        bottom: 25%;
+        right: 11%;
+        transform: translateX(-50%) translateY(-50%);
+        background-color: rgb(47, 43, 43);
+        color: rgba(255, 255, 255, 0.458);
+        font-size: 10px;
+        font-weight:lighter;
+        text-align: left;
+        font-family: "arial";
+        border-radius: 5px;
+  }
+  p{
+    font-size: 13px;
+    font-weight:lighter;
+    text-align: left;
+    font-family: "arial";
+    color: orange;
+  }
+  .subs{
+        width: 100px;
+        height: 38px;
+        margin: 0;
+        padding: 0;
+        position:fixed;
+        bottom: 25%;
+        right: 10%;
+        transform: translateX(-50%) translateY(-50%);
+        background-color: rgb(206, 163, 32);
+        color: black;
+        font-size: 10px;
+        font-weight:bold;
+        text-align: center;
+        font-family: "arial";
+        border-radius: 5px;
+  }
+
+
+  nav{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+
+nav ul{
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a{
+    line-height: 80px;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: "regular";
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 6px;
+}
+
+  
+</style>
+
+<body>
+    <div id="skull"></div>
+
+    <div class="wrapper">
+        <div class="box a">Want to stay in </br>touch?</div>
+        <div class="box b">NEWSLETTER</br>
+        SUBSCRIBE
+        </div>
+        <div class="box c">In order to start receiving our news, all you have to do is enter your email address. 
+            Everything else will be taken care of by us. We will send you emails containing information about game. We don't spam.
+        </div>
+    </div>
+    <button type="button" disabled class="email">&nbsp;   Your email address</br>
+    <p>&nbsp;   youremail@binar.co.id</p>
+    </button>
+    <button type="button" class="subs">Subscribe now</button>
+  
+    <nav>
+        <ul>
+            <li><a href="index.html">MAIN</a></li>
+            <li><a href="two.html">ABOUT</a></li>
+            <li><a href="three.html">GAME FEATURES</a></li>
+            <li><a href="four.html">SYSTEM REQUIREMENTS</a></li>
+            <li><a href="five.html">QUOTES</a></li>
+            <li><a href="#"><img src="assets/facebook.svg"></a></li>
+            <li><a href="#"><img src="assets/twitter.svg"></a></li>
+            <li><a href="#"><img src="assets/vector.svg"></a></li>
+            <li><a href="#"><img src="assets/twitch.svg"></a></li>
+        </ul>
+       </nav>    
+</body>
+</html>
